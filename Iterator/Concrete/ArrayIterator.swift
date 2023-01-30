@@ -16,7 +16,7 @@ internal class ArrayIterator: Iterator {
     }
 
     internal var current: Object? {
-        self.array.item(at: self.index) as? Object
+        self.array.item(at: self.index)
     }
 
 
