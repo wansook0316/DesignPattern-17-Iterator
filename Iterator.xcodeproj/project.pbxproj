@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		CE53C61B298754B400BBA6BD /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE53C61A298754B400BBA6BD /* main.swift */; };
+		CE53C6352987846300BBA6BD /* Aggregator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE53C6342987846300BBA6BD /* Aggregator.swift */; };
+		CE53C6372987846B00BBA6BD /* Iterator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE53C6362987846B00BBA6BD /* Iterator.swift */; };
+		CE53C63B298784E800BBA6BD /* Object.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE53C63A298784E800BBA6BD /* Object.swift */; };
+		CE53C63F2987853000BBA6BD /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE53C63E2987853000BBA6BD /* Item.swift */; };
+		CE53C6412987856800BBA6BD /* Loggable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE53C6402987856800BBA6BD /* Loggable.swift */; };
+		CE53C643298785A900BBA6BD /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE53C642298785A900BBA6BD /* Array.swift */; };
+		CE53C6452987892500BBA6BD /* ArrayIterator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE53C6442987892500BBA6BD /* ArrayIterator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +32,13 @@
 /* Begin PBXFileReference section */
 		CE53C617298754B400BBA6BD /* Iterator */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Iterator; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE53C61A298754B400BBA6BD /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		CE53C6342987846300BBA6BD /* Aggregator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Aggregator.swift; sourceTree = "<group>"; };
+		CE53C6362987846B00BBA6BD /* Iterator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Iterator.swift; sourceTree = "<group>"; };
+		CE53C63A298784E800BBA6BD /* Object.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Object.swift; sourceTree = "<group>"; };
+		CE53C63E2987853000BBA6BD /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		CE53C6402987856800BBA6BD /* Loggable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loggable.swift; sourceTree = "<group>"; };
+		CE53C642298785A900BBA6BD /* Array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
+		CE53C6442987892500BBA6BD /* ArrayIterator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayIterator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +72,31 @@
 			isa = PBXGroup;
 			children = (
 				CE53C61A298754B400BBA6BD /* main.swift */,
+				CE53C63C2987851100BBA6BD /* Interface */,
+				CE53C63D2987852000BBA6BD /* Concrete */,
 			);
 			path = Iterator;
+			sourceTree = "<group>";
+		};
+		CE53C63C2987851100BBA6BD /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				CE53C63A298784E800BBA6BD /* Object.swift */,
+				CE53C6342987846300BBA6BD /* Aggregator.swift */,
+				CE53C6362987846B00BBA6BD /* Iterator.swift */,
+				CE53C6402987856800BBA6BD /* Loggable.swift */,
+			);
+			path = Interface;
+			sourceTree = "<group>";
+		};
+		CE53C63D2987852000BBA6BD /* Concrete */ = {
+			isa = PBXGroup;
+			children = (
+				CE53C63E2987853000BBA6BD /* Item.swift */,
+				CE53C642298785A900BBA6BD /* Array.swift */,
+				CE53C6442987892500BBA6BD /* ArrayIterator.swift */,
+			);
+			path = Concrete;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -120,7 +157,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE53C6412987856800BBA6BD /* Loggable.swift in Sources */,
+				CE53C63F2987853000BBA6BD /* Item.swift in Sources */,
+				CE53C643298785A900BBA6BD /* Array.swift in Sources */,
+				CE53C6372987846B00BBA6BD /* Iterator.swift in Sources */,
+				CE53C6352987846300BBA6BD /* Aggregator.swift in Sources */,
+				CE53C63B298784E800BBA6BD /* Object.swift in Sources */,
 				CE53C61B298754B400BBA6BD /* main.swift in Sources */,
+				CE53C6452987892500BBA6BD /* ArrayIterator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
